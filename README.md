@@ -1,6 +1,6 @@
 # Bresenham
 
-TODO: Write a gem description
+A set of functions implementing Bresenham's algorithm for lines and circles.
 
 ## Installation
 
@@ -18,12 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    require 'bresenham'
+    # x_start, y_start, x_end, y_end
+    line_points_set = Bresenham::Line::coordinates(0, 0, 3, 10)
 
-## Contributing
+    # x_origin, y_origin, radius
+    circle_points_set = Bresenham::Circle::coordinates(0, 0, 10)
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
